@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>小姐姐</title>
+		<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+
+	</head>
+		<script>
+			$(function(){
+				$("#two1").hide();
+				$("#two2").hide();
+				$("#two3").hide();
+								
+				$("#two").mousemove(function(){
+					$("#two1").show();
+					$("#two").hide();
+				});
+				$("#two1").mousemove(function(){
+					$("#two2").show();
+					$("#two1").hide();
+				});
+				$("#two2").mousemove(function(){
+					$("#two3").show();
+					$("#two2").hide();
+				});
+				$("#two3").mousemove(function(){
+					$("#two").show();
+					$("#two3").hide();
+				});
+				
+				$("#one").click(function(){
+					alert("好巧哦，我也喜欢你！")
+				})
+				
+			});
+		</script>
+	
+	
+	
+	
+	
+	
+	<style type="text/css">
+		table {
+			position: absolute;
+			top: 120px;
+			left: 430px;
+			
+			
+		}
+		input{
+			width: 100px;
+			 height: 50px;
+		}
+		#two1{
+			position: absolute;
+			left: 300px;
+			top: 74px;	
+		}
+		#one{
+			position: absolute;
+			left: 100px;
+			top: 203px;	
+		}
+		#two{
+			position: absolute;
+			left: 350px;
+			top: 203px;	
+		}
+		#two3{
+			position: absolute;
+			left: 209px;
+			top: 330px;	
+		}
+		
+		
+	</style>
+
+	<body>
+		<div id="center">
+			
+		
+		<table bgcolor="blanchedalmond"  align="center" width="550px" height="400px" cellspacing="0px" cellpadding="0px">
+			<tr height="16%">
+				<td>
+					<div>
+						<!--要问的问题-->
+						<p align="center">
+							<font size="5" color="red"  face="新宋体"><i>Hi,小姐姐</i> </font><br />
+								<font size="7" color="red" face="黑体">你喜欢我吗？</font>
+								<img src="../img/2.jpg"  width="60px" height="60px"/>
+						</p>
+					</div>
+			</tr>
+			<tr height="16%">
+				<td>
+					<!--不是-->
+					<div >
+						<input type="button" value="不喜欢" id="two1">
+					</div>
+				</td>
+			</tr>
+			<tr height="16%">
+				<td>
+					<div >
+						<input type="button" value="不喜欢" id="two2" />
+					</div>
+				</td>
+			</tr>
+			<tr height="16%">
+				<div >
+					
+				
+				<td>
+					<input type="button" value="喜欢" id="one"/>
+					<input type="button" value="不喜欢" id="two" />
+				</td>
+					</div>
+			</tr>
+			<tr height="16%">
+				<td><input type="button" value="不喜欢" / id="two3"></td>
+			</tr>
+			<tr >
+				<td></td>
+			</tr>
+
+		</table>
+</div>
+	</body>
+
+</html>
